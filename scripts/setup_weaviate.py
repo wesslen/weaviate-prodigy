@@ -35,6 +35,13 @@ class_obj = {
         },
     ],
     "vectorizer": "text2vec-openai",
+    "moduleConfig": {
+      "text2vec-openai": {
+        "model": "ada",
+        "modelVersion": "002",
+        "type": "text"
+      }
+    }
 }
 
 # add the schema
