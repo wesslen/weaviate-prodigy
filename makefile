@@ -17,5 +17,8 @@ get_data:
 setup:
 	python3 scripts/setup_weaviate.py
 
+query:
+	python3 scripts/query_weaviate.py
+
 clean:
 	rm -rf data
