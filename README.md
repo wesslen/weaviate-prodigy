@@ -1,4 +1,4 @@
-# weaviate-prodigy-openai
+# Overview
 
 A/B evaluation with Prodigy with weaviate vector database using OpenAI embeddings.
 
