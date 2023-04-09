@@ -14,5 +14,8 @@ get_data:
 	rm -r SICK_train.txt
 	rm -r SICK_trial.txt
 
+setup:
+	python3 scripts/setup_weaviate.py
+
 clean:
 	rm -rf data
