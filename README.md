@@ -59,20 +59,39 @@ This runs Prodigy's [`compare` recipe](https://prodi.gy/docs/recipes#compare):
 
 ```
 python3 -m prodigy compare weaviate-sts ./data/choice_bottom.jsonl ./data/choice_top.jsonl
+Added dataset weaviate-compare to database SQLite.
+
+✨  Starting the web server at http://localhost:8080 ...
+Open the app in your browser and start annotating!
+
+^C
+✔ Saved 30 annotations to database SQLite
+Dataset: weaviate-compare
+Session ID: 2023-04-09_18-15-52
+
+
+
+=========================== ✨  Evaluation results ===========================
+✔ You preferred B (choice_top.jsonl)
+
+A          2   choice_bottom.jsonl
+B         22   choice_top.jsonl   
+Ignored    0                      
+Total     24  
 ```
 
 ![](img/prodigy-compare-example.png)
 
 # TODOS
 
-[ ] Generalize `query_weaviate.py` to take bottom ranking as input
+[] Generalize `query_weaviate.py` to take bottom ranking as input
 
-[ ] Remove options that are identical to the input
+[] Remove options that are identical to the input
 
-[ ] Explore option to compare across different embeddings: e.g., OpenAI vs. Cohere or HuggingFace
+[] Explore option to compare across different embeddings: e.g., OpenAI vs. Cohere or HuggingFace
 
-[ ] Explore running local weaviate instance (e.g., Docker)
+[] Explore running local weaviate instance (e.g., Docker)
 
-[ ] Create custom Prodigy recipe that reads weaviate in batches, rather than flat files
+[] Create custom Prodigy recipe that reads weaviate in batches, rather than flat files
 
-[ ] Create tests
+[] Create tests
