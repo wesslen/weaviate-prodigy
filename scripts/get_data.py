@@ -41,13 +41,12 @@ def combine_text_columns(input_file: str, output_file: str):
         output_file (str): Output file name.
     """
     # Read input file and write to output file
-    with open(input_file, "r") as file_in, open(output_file, "w") as file_out:
+    with open(input_file, "r") as file_in:
         # Create CSV reader and writer objects
         reader = csv.reader(file_in, delimiter="\t")
-        writer = csv.writer(file_out, delimiter="\t")
 
-        # Write header to output file
-        header = next(reader)
+        # Skip header
+        next(reader)
 
         examples = []
         # Loop through each row in input file

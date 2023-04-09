@@ -7,9 +7,12 @@ install:
 
 get_data:
 	wget https://github.com/brmson/dataset-sts/raw/master/data/sts/sick2014/SICK_train.txt
+	wget https://github.com/brmson/dataset-sts/raw/master/data/sts/sick2014/SICK_trial.txt
 	mkdir data
-	python scripts/get_data.py SICK_train.txt data/sick-input.jsonl
-	rm -rf SICK_train.txt
+	python3 scripts/get_data.py SICK_train.txt data/sick-train.jsonl
+	python3 scripts/get_data.py SICK_trial.txt data/sick-test.jsonl
+	rm -r SICK_train.txt
+	rm -r SICK_trial.txt
 
 clean:
 	rm -rf data
