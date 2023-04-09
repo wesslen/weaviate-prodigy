@@ -58,7 +58,8 @@ make prodigy
 This runs Prodigy's [`compare` recipe](https://prodi.gy/docs/recipes#compare):
 
 ```
-python3 -m prodigy compare weaviate-sts ./data/choice_bottom.jsonl ./data/choice_top.jsonl
+$ python3 -m prodigy compare weaviate-sts ./data/choice_bottom.jsonl ./data/choice_top.jsonl
+
 Added dataset weaviate-compare to database SQLite.
 
 ✨  Starting the web server at http://localhost:8080 ...
