@@ -20,5 +20,8 @@ setup:
 query:
 	python3 scripts/query_weaviate.py
 
+prodigy:
+	python3 -m prodigy compare weaviate-sts ./data/choice_bottom.jsonl ./data/choice_top.jsonl
+
 clean:
 	rm -rf data
